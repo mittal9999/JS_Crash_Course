@@ -145,8 +145,8 @@ const todos = [
 
 
 // if statement
-const x = 4;
-const y = 9;
+// const x = 4;
+// const y = 9;
 // if(x === 10) {
 //     console.log('x is 10');
 // }else  if(x > 10){
@@ -156,10 +156,113 @@ const y = 9;
 // }
 
 
-if(x > 5 || y > 10) {
-    console.log('x is more than 5 or y is ore 10');
-}else  if(x > 10){
- console.log('x is greater than 10');
-}else {
-    console.log('x is less than 10');
+// if (x > 5 || y > 10) {
+//     console.log('x is more than 5 or y is ore 10');
+// } else if (x > 10) {
+//     console.log('x is greater than 10');
+// } else {
+//     console.log('x is less than 10');
+// }
+
+const x = 20;
+const color = x > 10 ? 'red' : 'blue';
+// console.log(color);
+
+
+switch (color) {
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+
+        console.log('color is NOT red or blue');
+        break;
 }
+
+
+// functions 
+// function addNumbs(num1 = 1, num2 = 1) {
+//     // console.log(num1 + num2);
+//     return num1 + num2 ;
+// }
+//   console.log (addNumbs(6,5));
+
+// const addNumbs = (num1 =1 , num2 =1) => {
+//     return num1 + num2;
+// }
+// console.log(addNumbs(52,5));
+
+
+
+// const sum = num1 => num1 + 5;
+// console.log(sum(5));
+// todos.forEach((todo) => console.log(todo));
+
+
+
+
+// OOP 
+
+// // Constructor function
+// function Person(firstName, lastName, dob) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob);
+//     this.getBirthYear = function () {
+//         return this.dob.getFullYear();
+//     }
+//     this.getFullName = function () {
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
+
+// Person.prototype.getBirthYear = function () {
+//     return this.dob.getFullYear();
+// }
+
+// Person.prototype.getFullName = function () {
+//     return `${this.firstName} ${this.lastName}`;
+// }
+
+// CLASS
+
+// class Person {
+//     constructor(firstName, lastName, dob) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.dob = new Date(dob);
+//     }
+
+//     getBirthYear() {
+//         return this.dob.getFullYear();
+//     }
+
+//     getFullName(){
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
+// // Instantiate object
+// const person1 = new Person('John', 'Doe', '4-3-1980');
+// const person2 = new Person('john111', 'Doe1', '14-4-1981');
+// const person3 = new Person('John222', 'Doe2', '24-5-1982');
+
+
+
+// console.log(person1.dob.getFullYear());
+// console.log(person1.getBirthYear());
+// console.log(person2.getFullName());
+
+// console.log(person1);
+
+
+// console.log(window);
+// window.alert(1);
+
+//  Single element 
+ const form = (document.getElementById('my-form')); 
+  console.log(document.querySelector('h1'));
+
+//   
