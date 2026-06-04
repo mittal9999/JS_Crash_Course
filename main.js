@@ -56,3 +56,110 @@ console.warn('This is warning');
 // console.log(fruits);
 
 
+const person = {
+    firstName: 'mittal',
+    lastName: 'rathva',
+    age: 27,
+    hobbies: ['music', 'movies', 'sports'],
+    address: {
+        street: '50 main st',
+        city: 'Boston',
+        state: 'MA'
+    }
+}
+console.log(person.firstName, person.lastName);
+console.log(person.hobbies[2]);
+console.log(person.address.city);
+// alert(person);
+
+const { firstName, lastName, address: { city } } = person;
+console.log(city);
+
+
+person.email = 'mittal@gmail.com';
+console.log(person);
+
+
+const todos = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        text: 'Meeting with boss',
+        isCompleted: true
+    },
+    {
+        id: 3,
+        text: 'Dentist appt',
+        isCompleted: false
+    }
+];
+
+// console.log(todos[0].text);
+
+//  const  todoJSON = JSON.stringify(todos);
+//  console.log(todoJSON);
+
+
+// FOr loop++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// for(let i = 0; i <= 10; i++) {
+//     console.log(`For Loop Number: ${i}`);
+// }
+
+
+// While 
+// let i  = 0;
+// while ( i < 10) {
+//     console.log(`While Loop Number: ${i}`);
+//     i++;
+// }
+
+// for ( let todo of todos){
+//   console.log(todo.text);
+// }
+
+// ForEach, map, filter
+
+// todos.forEach(function(todo){
+//  console.log(todo.text);
+// });
+
+// map return arrays
+// const todoText = todos.map(function (todo) {
+//     return todo.text;
+// });
+// console.log(todoText);
+
+
+//filter
+// const todoCompleted = todos.filter(function (todo) {
+//     return todo.isCompleted === true;
+// }).map(function(todo) {
+//     return todo.text;
+// })
+// console.log(todoCompleted);
+
+
+
+// if statement
+const x = 4;
+const y = 9;
+// if(x === 10) {
+//     console.log('x is 10');
+// }else  if(x > 10){
+//  console.log('x is greater than 10');
+// }else {
+//     console.log('x is less than 10');
+// }
+
+
+if(x > 5 || y > 10) {
+    console.log('x is more than 5 or y is ore 10');
+}else  if(x > 10){
+ console.log('x is greater than 10');
+}else {
+    console.log('x is less than 10');
+}
